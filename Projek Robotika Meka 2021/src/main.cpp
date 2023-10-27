@@ -1,13 +1,20 @@
 #include "Arduino.h"
 
+float data_analog;
+
 void setup() {
   Serial.begin(57600);
 }
 
-void loop() {
-  float data_analog = analogRead(A0);
-  unsigned char data_digital = digitalRead(7);
+void loop() { 
+  detectionBall();
   
+  delay(500);
+}
+
+void detectionBall() {
+  data_analog = analogRead(A0);
+
   Serial.println(data_analog);
   Serial.println(" ");
 
@@ -17,5 +24,4 @@ void loop() {
     Serial.println("Bola Putih");
   else
     Serial.println("Tidak Ada Bola") ;
-  delay(500);
 }
