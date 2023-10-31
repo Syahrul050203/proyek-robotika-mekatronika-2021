@@ -2,7 +2,7 @@
 #include "sensor.hh"
 #include "strategi.hh"
 
-sensor color;
+sensor sens;
 strategi competiton;
 
 void setup() {
@@ -12,6 +12,7 @@ void setup() {
 }
 
 void loop() { 
-  color.BallDetection();
-  competiton.ManualMode();
+  // sens.BallDetection();
+  // competiton.ManualMode();
+  sens.LineDetection();
 }

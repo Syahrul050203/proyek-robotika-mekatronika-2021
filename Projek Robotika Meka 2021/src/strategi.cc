@@ -16,6 +16,10 @@ void strategi::StrategiInit() {
 
   motor1.setSpeed(speed_motor1);
   motor2.setSpeed(speed_motor2);
+
+  for (unsigned char i = 46; i <= 53; i++) {
+    pinMode(i, INPUT);
+  }
 }
 
 void strategi::ManualMode() {
