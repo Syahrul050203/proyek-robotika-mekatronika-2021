@@ -1,7 +1,6 @@
 #ifndef SENSOR_HH_
 #define SENSOR_HH_
 
-int a ;
 class sensor {
 private:
   float dataColor_;
