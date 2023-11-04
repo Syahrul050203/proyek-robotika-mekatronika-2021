@@ -1,9 +1,6 @@
 #ifndef STRATEGI_HH_
 #define STRATEGI_HH_
 
-const unsigned char speed_motor1 = 255;
-const unsigned char speed_motor2 = 255;
-
 class strategi {
   private:
 
@@ -12,6 +9,10 @@ class strategi {
    void RedTeam();
    void BlueTeam();
    void ManualMode();
+   void Maju(unsigned char vel);
+   void Mundur(unsigned char vel);
+   void BelokKanan(unsigned char vel_r, unsigned  char vel_l);
+   void BelokKiri(unsigned char vel_r, unsigned  char vel_l);
 
 };
 
