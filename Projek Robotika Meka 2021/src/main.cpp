@@ -1,8 +1,6 @@
 #include "Arduino.h"
-#include "sensor.hh"
 #include "strategi.hh"
 
-sensor sens;
 strategi competiton;
 
 void setup() {
@@ -12,7 +10,6 @@ void setup() {
 }
 
 void loop() { 
-  // sens.BallDetection();
   // competiton.ManualMode();
   sens.LineDetection();
 }
