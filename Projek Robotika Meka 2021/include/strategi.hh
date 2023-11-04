@@ -14,6 +14,9 @@ class strategi {
    void BelokKanan(unsigned char vel_r, unsigned  char vel_l);
    void BelokKiri(unsigned char vel_r, unsigned  char vel_l);
 
+   void DebugJoy(int err);
+   void RunJoy();
+
 };
 
 #endif
