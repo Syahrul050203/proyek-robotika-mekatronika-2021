@@ -10,6 +10,12 @@ void setup() {
 }
 
 void loop() { 
-  // competiton.ManualMode();
-  sens.LineDetection();
+  if (!(digitalRead(16)) && !(digitalRead(17)))
+    Serial.println("Init & calib");
+  else if  (!(digitalRead(16)) && (digitalRead(17)))
+    competiton.RedTeam();
+  else if  ((digitalRead(16)) && !(digitalRead(17)))
+    competiton.BlueTeam();
+  else
+    competiton.ManualMode();
 }

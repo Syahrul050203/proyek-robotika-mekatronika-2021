@@ -19,8 +19,8 @@ PS2X joyStick;
 void strategi::StrategiInit() {
   servo1.attach(SERVO1);
 
-  motor1.setSpeed(speed_motor1);
-  motor2.setSpeed(speed_motor2);
+  pinMode(16, INPUT_PULLUP);
+  pinMode(17, INPUT_PULLUP);
 
   for (unsigned char i = 46; i <= 53; i++) {
     pinMode(i, INPUT);
